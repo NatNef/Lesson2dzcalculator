@@ -10,11 +10,11 @@
     <string name="button_6">6</string>
     <string name="button_9">9</string>
     <string name="button_0">0</string>
-    <string name="button_zp">,</string>
-    <string name="button_plus">+</string>
-    <string name="button_minus">-</string>
-    <string name="button_delenie">/</string>
-    <string name="button_umnogenie">*</string>
-    <string name="button_ravno">=</string>
+    <string name="zp">,</string>
+    <string name="minus">-</string>
+    <string name="delenie">/</string>
+    <string name="umnogenie">*</string>
+    <string name="ravno">=</string>
+    <string name="plus">+</string>
 
 </resources>
