@@ -5,146 +5,224 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imageView1"
-            android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bob" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:fillViewport="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/bob" />
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="160sp"
-            android:fillViewport="true">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-                <Button
-                    android:id="@+id/button_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_1"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintTop_toBottonOf="@+id/imageView1"
-                    app:layout_constraintEnd_toStartOf="@+id/button_2"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.3"
-                    app:layout_constraintVertical_chainStyle="packed" />
-                <Button
-                    android:id="@+id/button_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_2"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintVertical_bias="0.3"
-                    app:layout_constraintBottom_toTopOf="@+id/button_5"
-                    app:layout_constraintEnd_toStartOf="@+id/button_3"
-                    app:layout_constraintStart_toEndOf="@+id/button_1"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_chainStyle="packed" />
-                <Button
-                    android:id="@+id/button_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_3"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintVertical_bias="0.3"
-                    app:layout_constraintBottom_toTopOf="@id/button_6"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/button_2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_chainStyle="packed" />
-                <Button
-                    android:id="@+id/button_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_4"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toTopOf="@id/button_7"
-                    app:layout_constraintEnd_toStartOf="@+id/button_5"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/button_1" />
-                <Button
-                    android:id="@+id/button_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_5"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toTopOf="@id/button_8"
-                    app:layout_constraintEnd_toStartOf="@id/button_6"
-                    app:layout_constraintStart_toEndOf="@id/button_4"
-                    app:layout_constraintTop_toBottomOf="@id/button_2" />
-                <Button
-                    android:id="@+id/button_6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_6"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toTopOf="@id/button_9"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/button_5"
-                    app:layout_constraintTop_toBottomOf="@id/button_3" />
-                <Button
-                    android:id="@+id/button_7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_7"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_8"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/button_4" />
-                <Button
-                    android:id="@+id/button_8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_8"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_9"
-                    app:layout_constraintStart_toEndOf="@id/button_7"
-                    app:layout_constraintTop_toBottomOf="@+id/button_5" />
-                <Button
-                    android:id="@+id/button_9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_9"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/button_8"
-                    app:layout_constraintTop_toBottomOf="@id/button_6" />
-                <Button
-                    android:id="@+id/button_0"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_0"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintTop_toBottomOf="@+id/button_8"
-                    app:layout_constraintStart_toStartOf="@+id/button_7"
-                    app:layout_constraintEnd_toStartOf="@+id/button_point" />
-                <Button
-                    android:id="@+id/button_zp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_zp"
-                    android:textSize="@dimen/button_text"
-                    app:layout_constraintTop_toBottomOf="@+id/button_9"
-                    app:layout_constraintStart_toEndOf="@+id/button_0"
-                    app:layout_constraintEnd_toEndOf="@id/button_9" />
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_1"
+            android:textSize="@dimen/button_text" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/pat" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_2"
+            android:textSize="@dimen/button_text" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_3"
+            android:textSize="@dimen/button_text" />
+
     </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_4"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_5"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_6"
+            android:textSize="@dimen/button_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_7"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_8"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_9"
+            android:textSize="@dimen/button_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/button_0"
+            android:textSize="@dimen/button_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_plus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_minus"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_umnogenie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_umnogenie"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_delenie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_delenie"
+            android:textSize="@dimen/button_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ravno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_ravno"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_zp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/button_zp"
+            android:textSize="@dimen/button_text" />
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/imageView2"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:srcCompat="@drawable/pat" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
