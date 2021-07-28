@@ -16,5 +16,23 @@
     <string name="umnogenie">*</string>
     <string name="ravno">=</string>
     <string name="plus">+</string>
+    <string name="counter_1">1</string>
+    <string name="counter_2">2</string>
+    <string name="counter_3">3</string>
+    <string name="counter_4">4</string>
+    <string name="counter_5">5</string>
+    <string name="counter_6">6</string>
+    <string name="counter_7">7</string>
+    <string name="counter_8">8</string>
+    <string name="counter_9">9</string>
+    <string name="counter_0">0</string>
+    <string name="counter_zp">,</string>
+    <string name="counter_delenie">/</string>
+    <string name="counter_ravno">=</string>
+    <string name="counter_plus">+</string>
+    <string name="counter_umnogenie">*</string>
+    <string name="counter_minus">-</string>
+    <string name="_0">0</string>
+
 
 </resources>
