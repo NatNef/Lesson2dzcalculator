@@ -377,3 +377,5 @@
             android:layout_width="match_parent"
             app:srcCompat="@drawable/pat"/>
     </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
