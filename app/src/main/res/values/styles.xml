@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#B8291E</item>
+        <item name="colorPrimaryDark">#FF6200EE</item>
+        <item name="colorAccent">#FF3700B3</item>
+    </style>
+
+    <style name="MyCoolButtonStyle" parent="AppTheme">
+        <item name="android:backgroundTint">#E641A4</item>
+    </style>
+
+    <style name="MyCoolButtonStyle2" parent="AppTheme">
+        <item name="android:backgroundTint">#7516A8</item>
+    </style>
+
+
+
+    <style name="MyCoolStyle" parent="AppTheme">
+
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:textColor">@color/design_default_color_primary</item>
+        <item name="android:layout_marginStart">@dimen/marginButton</item>
+        <item name="android:layout_marginEnd">@dimen/marginButton</item>
+        <item name="android:layout_marginTop">@dimen/marginButton</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">normal</item>
+        <item name="backgroundColor">@color/teal_200</item>
+        <item name="android:windowBackground">#8EDCE6</item>
+
+    </style>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryDark">#b0003a</item>
+        <item name="colorAccent">#ff6090</item>
+    </style>
+
+
+    <style name="MyCoolButtonStyleStyle">MyCoolButtonStyle</style>
+
+    <dimen name="marginButton" />
+
+</resources>

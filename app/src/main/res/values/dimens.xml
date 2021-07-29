@@ -2,5 +2,7 @@
 <resources>
     <dimen name="button_text">20sp</dimen>
     <dimen name="textCounter">20sp</dimen>
+    <dimen name="calculator">40sp</dimen>
+    <dimen name="TextSize">20sp</dimen>
 
 </resources>
