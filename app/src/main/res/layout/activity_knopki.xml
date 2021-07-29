@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:theme="@style/MyCoolStyle">
+    android:theme="@style/MyCoolStyle"
+    android:background="@drawable/fon">
 
-    <!--    android:background="@drawable/fon"-->
 
     <Space
         android:layout_width="match_parent"
@@ -376,4 +376,5 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             app:srcCompat="@drawable/pat"/>
+
     </LinearLayout>
