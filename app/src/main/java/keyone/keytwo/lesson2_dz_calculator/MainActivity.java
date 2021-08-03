@@ -16,12 +16,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             private Counters counters; // для восстановления
             private final static String keyCounters = "Counters";
 
-
+          //  Counters counters = new Counters();
 
 
 
 
     // пользовательский элемент счетчика
+
+
 
             private TextView textCounter_1;
             private TextView textCounter_2;
@@ -64,12 +66,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_knopki);
-
-                Counters counters = new Counters();
                 initView();
 
-
             }
+
 
 
             // Получить пользовательский элемент по идентификатору
@@ -107,6 +107,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_umnogenie = findViewById(R.id.button_umnogenie);
                 button_delenie = findViewById(R.id.button_delenie);
                 button_ravno = findViewById(R.id.button_ravno);
+
+
+                button_1.setOnClickListener(Listener);
+                button_2.setOnClickListener(Listener);
+                button_3.setOnClickListener(Listener);
+                button_4.setOnClickListener(Listener);
+                button_5.setOnClickListener(Listener);
+                button_6.setOnClickListener(Listener);
+                button_7.setOnClickListener(Listener);
+                button_8.setOnClickListener(Listener);
+                button_9.setOnClickListener(Listener);
+                button_0.setOnClickListener(Listener);
+                button_plus.setOnClickListener(Listener);
+                button_minus.setOnClickListener(Listener);
+                button_umnogenie.setOnClickListener(Listener);
+                button_delenie.setOnClickListener(Listener);
+                button_ravno.setOnClickListener(Listener);
 
 
             }
