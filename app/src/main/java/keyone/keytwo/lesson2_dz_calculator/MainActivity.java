@@ -10,12 +10,18 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
             private final String KEY = "key counter"; // создали ключ для сохранения данных
             private Counters counters; // для восстановления
+            private final static String keyCounters = "Counters";
 
-            // пользовательский элемент счетчика
+
+
+
+
+
+    // пользовательский элемент счетчика
 
             private TextView textCounter_1;
             private TextView textCounter_2;
@@ -219,4 +225,23 @@ public class MainActivity extends AppCompatActivity {
                 textCounter_ravno.setText(String.format(Locale.getDefault(),"увеличивает %id", counters.getCounter_ravno()));
             }
 
-        }
+    // Отображение данных на экране
+    private void setTextCounters(){
+        setTextCounter(textCounter_1, counters.getCounter_1());
+        setTextCounter(textCounter_2, counters.getCounter_2());
+        setTextCounter(textCounter_3, counters.getCounter_3());
+        setTextCounter(textCounter_4, counters.getCounter_4());
+        setTextCounter(textCounter_5, counters.getCounter_5());
+        setTextCounter(textCounter_6, counters.getCounter_6());
+        setTextCounter(textCounter_7, counters.getCounter_7());
+        setTextCounter(textCounter_8, counters.getCounter_8());
+        setTextCounter(textCounter_9, counters.getCounter_9());
+        setTextCounter(textCounter_0, counters.getCounter_0());
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
+    }
+}
