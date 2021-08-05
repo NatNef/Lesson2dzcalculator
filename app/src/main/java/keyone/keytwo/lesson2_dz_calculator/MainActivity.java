@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             private Counters counters; // для восстановления
             private final static String keyCounters = "Counters";
 
-          //  Counters counters = new Counters();
+            Counters counter = new Counters();
 
 
 

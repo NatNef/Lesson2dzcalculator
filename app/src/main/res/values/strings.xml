@@ -34,6 +34,7 @@
     <string name="counter_minus">-</string>
     <string name="_0">0</string>
     <string name="descriptionLanguage">Calculator</string>
+    <string name="text_start">Калькулятор</string>
 
 
 </resources>
