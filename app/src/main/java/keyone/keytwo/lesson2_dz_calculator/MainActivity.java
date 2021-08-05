@@ -13,10 +13,9 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
             private final String KEY = "key counter"; // создали ключ для сохранения данных
-            private Counters counters; // для восстановления
+            private Counters counters= new Counters(); // для восстановления
             private final static String keyCounters = "Counters";
 
-            Counters counter = new Counters();
 
 
 
@@ -130,74 +129,73 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
             public View.OnClickListener Listener = new View.OnClickListener() {
-                private Counters counters;
 
                 @Override
                 public void onClick(View v) {
                     switch (v.getId()) {
                         case R.id.button_1:
                             counters.increaseCounter_1();
-                            textCounter_1.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_1()));
+                            textCounter_1.setText(String.format("увеличивает %d", counters.getCounter_1()));
                             break;
                         case R.id.button_2:
                             counters.increaseCounter_2();
-                            textCounter_2.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_2()));
+                            textCounter_2.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_2()));
                             break;
                         case R.id.button_3:
                             counters.increaseCounter_3();
-                            textCounter_3.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_3()));
+                            textCounter_3.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_3()));
                             break;
                         case R.id.button_4:
                             counters.increaseCounter_4();
-                            textCounter_4.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_4()));
+                            textCounter_4.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_4()));
                             break;
                         case R.id.button_5:
                             counters.increaseCounter_5();
-                            textCounter_5.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_5()));
+                            textCounter_5.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_5()));
                             break;
                         case R.id.button_6:
                             counters.increaseCounter_6();
-                            textCounter_6.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_6()));
+                            textCounter_6.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_6()));
                             break;
                         case R.id.button_7:
                             counters.increaseCounter_7();
-                            textCounter_7.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_7()));
+                            textCounter_7.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_7()));
                             break;
                         case R.id.button_8:
                             counters.increaseCounter_8();
-                            textCounter_8.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_8()));
+                            textCounter_8.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_8()));
                             break;
                         case R.id.button_9:
                             counters.increaseCounter_9();
-                            textCounter_9.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_9()));
+                            textCounter_9.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_9()));
                             break;
                         case R.id.button_0:
                             counters.increaseCounter_0();
-                            textCounter_0.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_0()));
+                            textCounter_0.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_0()));
                             break;
                         case R.id.button_plus:
                             counters.increaseCounter_plus();
-                            textCounter_plus.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_plus()));
+                            textCounter_plus.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_plus()));
                             break;
                         case R.id.button_minus:
                             counters.increaseCounter_minus();
-                            textCounter_minus.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_minus()));
+                            textCounter_minus.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_minus()));
                             break;
                         case R.id.button_umnogenie:
                             counters.increaseCounter_umnogenie();
-                            textCounter_umnogenie.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_umnogenie()));
+                            textCounter_umnogenie.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_umnogenie()));
                             break;
                         case R.id.button_delenie:
                             counters.increaseCounter_delenie();
-                            textCounter_delenie.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_delenie()));
+                            textCounter_delenie.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_delenie()));
                             break;
                         case R.id.button_ravno:
                             counters.increaseCounter_ravno();
-                            textCounter_ravno.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_ravno()));
+                            textCounter_ravno.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_ravno()));
                             break;
                         case R.id.button_zp:
                             counters.increaseCounter_zp();
-                            textCounter_zp.setText(String.format(Locale.getDefault(), "увеличивает %id", counters.getCounter_zp()));
+                            textCounter_zp.setText(String.format(Locale.getDefault(), "увеличивает %d", counters.getCounter_zp()));
                             break;
                     }
                 }
