@@ -35,6 +35,9 @@
     <string name="_0">0</string>
     <string name="descriptionLanguage">Calculator</string>
     <string name="text_start">Калькулятор</string>
+    <string name="open">Открыть калькулятор</string>
+    <string name="text_button_blue">Синяя</string>
+    <string name="text_button_red">Красная</string>
 
 
 </resources>

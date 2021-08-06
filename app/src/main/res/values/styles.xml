@@ -40,6 +40,31 @@
 
     <style name="MyCoolButtonStyleStyle">MyCoolButtonStyle</style>
 
+    <style name="MyCoolStyleBlue" parent="AppThemeBlue">
+
+        <item name="android:textSize">@dimen/TextSize</item>
+        <item name="android:textColor">@color/design_default_color_primary</item>
+        <item name="android:layout_marginStart">@dimen/marginButton</item>
+        <item name="android:layout_marginEnd">@dimen/marginButton</item>
+        <item name="android:layout_marginTop">@dimen/marginButton</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">normal</item>
+        <item name="backgroundColor">@color/teal_200</item>
+        <item name="android:windowBackground">#8EDCE6</item>
+
+    </style>
+
+    <style name="AppThemeBlue" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#0B4B7E</item>
+        <item name="colorPrimaryDark">#3F51B5</item>
+        <item name="colorAccent">#ff6090</item>
+    </style>
+
+
+
+
+
+
     <dimen name="marginButton" />
 
 </resources>
