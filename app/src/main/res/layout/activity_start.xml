@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <EditText
         android:id="@+id/EditTextStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

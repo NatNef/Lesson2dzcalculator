@@ -13,14 +13,13 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
             private final String KEY = "key counter"; // создали ключ для сохранения данных
             private Counters counters= new Counters(); // для восстановления
             private final static String keyCounters = "Counters";
             Button buttonBlue;
 
-
-
-//    //определили кнопку
+    //определили кнопку
     buttonBlue = findViewById(R.id.buttonBlue);
     //повесили обработчик
         buttonBlue.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
         }
     });
+
 
 
 
