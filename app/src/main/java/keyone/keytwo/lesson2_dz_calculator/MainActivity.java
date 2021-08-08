@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             private final static String keyCounters = "Counters";
             Button buttonBlue;
 
-    //определили кнопку
-    buttonBlue = findViewById(R.id.buttonBlue);
-    //повесили обработчик
-        buttonBlue.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(MainActivity.this,BlueActivity.class);
-            startActivity(i);
-        }
-    });
+//    //определили кнопку
+//    buttonBlue = findViewById(R.id.buttonBlue);
+//    //повесили обработчик
+//        buttonBlue.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            Intent i = new Intent(MainActivity.this,BlueActivity.class);
+//            startActivity(i);
+//        }
+//    });
 
 
 
