@@ -17,27 +17,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             private final String KEY = "key counter"; // создали ключ для сохранения данных
             private Counters counters= new Counters(); // для восстановления
             private final static String keyCounters = "Counters";
-            Button buttonBlue;
+            Button button_blue;
 
-//    //определили кнопку
-//    buttonBlue = findViewById(R.id.buttonBlue);
-//    //повесили обработчик
-//        buttonBlue.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            Intent i = new Intent(MainActivity.this,BlueActivity.class);
-//            startActivity(i);
-//        }
-//    });
-
-
-
+        //определили кнопку
+        button_blue = findViewById(R.id.button_blue);
+        //повесили обработчик
+        button_blue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, BlueActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     // пользовательский элемент счетчика
-
-
-
             private TextView textCounter_1;
             private TextView textCounter_2;
             private TextView textCounter_3;
