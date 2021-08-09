@@ -14,10 +14,10 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-            private final String KEY = "key counter"; // создали ключ для сохранения данных
-            private Counters counters= new Counters(); // для восстановления
-            private final static String keyCounters = "Counters";
-            Button buttonBlue;
+    private final String KEY = "key counter"; // создали ключ для сохранения данных
+    private Counters counters = new Counters(); // для восстановления
+    private final static String keyCounters = "Counters";
+    Button buttonBlue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,13 +75,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //_____________________________________________
             // ДЗ 3
             // создаем onCreate
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_knopki);
-                initView();
-
-            }
+//            @Override
+//            protected void onCreate(Bundle savedInstanceState) {
+//                super.onCreate(savedInstanceState);
+//                setContentView(R.layout.activity_knopki);
+//                initView();
+//
+//            }
 
 
 

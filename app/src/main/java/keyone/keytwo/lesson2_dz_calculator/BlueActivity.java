@@ -18,10 +18,10 @@ public class BlueActivity extends AppCompatActivity {
 //        startActivity(i);
 
 
-        Button buttonRed;
+        Button button_red;
         //определили кнопку
-        buttonRed = findViewById(R.id.buttonRed);
-        buttonRed.setOnClickListener(new View.OnClickListener() {
+        button_red = findViewById(R.id.button_red);
+        button_red.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(BlueActivity.this, MainActivity.class);
